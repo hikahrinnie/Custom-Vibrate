@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+
+    <TextView
+        android:id="@+id/Instruction1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Tap each button for a different vibrate tone."
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Instruction2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="40dp"
+        android:text="Press Record when ready!"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Instruction1" />
+
+    <Button
+        android:id="@+id/Tone1"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="164dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="56dp"
+        android:background="@color/colorAccent"
+        android:text="Tone 1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Instruction2" />
+
+    <Button
+        android:id="@+id/Tone2"
+        android:layout_width="164dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="44dp"
+        android:background="@color/colorPrimary"
+        android:text="Tone 2"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tone1" />
+
+</android.support.constraint.ConstraintLayout>
